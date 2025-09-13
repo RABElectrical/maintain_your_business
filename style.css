@@ -643,6 +643,67 @@ footer {
     background-color: #0077B5;
 }
 
+/* New Packages Styles */
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.package-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex: 1 1 300px;
+    border: 3px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+.package-card.bronze {
+    border-color: #CD7F32;
+}
+.package-card.silver {
+    border-color: #C0C0C0;
+}
+.package-card.gold {
+    border-color: #FFD700;
+}
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #FF8C00;
+    color: white;
+}
+.package-card:hover * {
+    color: white !important;
+}
+.package-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #15316f;
+}
+
+.package-card p {
+    text-align: center; /* This is the new, corrected rule */
+}
+.package-cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #15316f;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+}
+.package-cta:hover {
+    background-color: #0d2146;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -650,10 +711,10 @@ footer {
 }
 @keyframes slideUp {
     from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0)
-    }
+    to { transform: translateY(0); }
+}
+
 /* Hover effect: all text containers and list items */
-.container:hover,
 .services-list li:hover,
 .path-to-mind ol li:hover,
 .testimonial-card:hover,
@@ -665,9 +726,7 @@ footer {
     color: white; /* Text turns white */
     transition: background-color 0.3s, color 0.3s;
 }
-
 /* Ensure child text also changes to white on hover */
-.container:hover * ,
 .services-list li:hover *,
 .path-to-mind ol li:hover *,
 .testimonial-card:hover *,
@@ -677,7 +736,6 @@ footer {
 .referral-box:hover * {
     color: white !important;
 }
-
 /* Optional: smooth transition for lists inside containers */
 .services-list li,
 .path-to-mind ol li,
