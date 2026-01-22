@@ -746,3 +746,180 @@ footer {
 .referral-box {
     transition: background-color 0.3s, color 0.3s;
 }
+/* LEAD MAGNET SECTION */
+.lead-magnet-section {
+    background-color: #15316f; /* Brand Blue */
+    color: white;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.magnet-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Left Side: Text */
+.magnet-content {
+    flex: 1 1 400px; /* Takes up half space on desktop */
+}
+
+.magnet-content h2 {
+    color: #FF8C00; /* Orange Headline */
+    text-align: left;
+    margin-top: 0;
+}
+
+.stake-questions {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.stake-questions li {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #FF8C00;
+}
+
+.magnet-hook {
+    font-size: 1.1rem;
+    background-color: rgba(255, 140, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Right Side: Form */
+.magnet-form-box {
+    flex: 1 1 350px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333; /* Dark text inside the white box */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.magnet-form-box h3 {
+    color: #15316f;
+    margin-top: 0;
+    text-align: center;
+}
+
+.magnet-form-box p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .magnet-container {
+        flex-direction: column;
+    }
+    .magnet-content h2 {
+        text-align: center;
+    }
+}
+/* --- LEAD MAGNET SECTION (High Stakes) --- */
+.lead-magnet-section {
+    background-color: #15316f; /* Brand Blue */
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.magnet-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* --- LEFT SIDE: The Questions (Blue Background) --- */
+.magnet-content {
+    flex: 1 1 400px; 
+}
+
+/* 1. Force the Header to be Orange */
+.magnet-content h2 {
+    color: #FF8C00 !important; 
+    text-align: left;
+    margin-top: 0;
+}
+
+/* 2. Force ALL text on the blue background to be WHITE */
+.magnet-content p, 
+.magnet-content li, 
+.magnet-content strong,
+.magnet-content span {
+    color: #ffffff !important; /* Overrides global grey */
+}
+
+.stake-questions {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.stake-questions li {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #FF8C00;
+}
+
+.magnet-hook {
+    font-size: 1.1rem;
+    background-color: rgba(255, 140, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* --- RIGHT SIDE: The Form (White Box) --- */
+.magnet-form-box {
+    flex: 1 1 350px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 3. Text INSIDE the white box must be DARK (or it disappears) */
+.magnet-form-box h3 {
+    color: #15316f !important;
+    margin-top: 0;
+    text-align: center;
+}
+
+.magnet-form-box p {
+    color: #333333 !important; /* Dark Grey for readability on white */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.privacy-text {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #666666 !important;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .magnet-container {
+        flex-direction: column;
+    }
+    .magnet-content h2 {
+        text-align: center;
+    }
+}
