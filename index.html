@@ -5,20 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrical Maintenance Packages | R.A.B Electrical</title>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+    /* GLOBAL STYLES (Desktop & Mobile) */
+    .landing-header-inner {
+        display: flex;
+        flex-direction: column; /* This forces them to stack (Logo Top, Number Bottom) */
+        align-items: center;    /* This centers them horizontally */
+        justify-content: center;
+        gap: 1rem;              /* Adds space between the Logo and the Number */
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .header-contact-info {
+        text-align: center; /* Ensures the text inside is centered */
+    }
+
+    /* Mobile Tweaks */
+    @media (max-width: 768px) {
+        /* Ensure logo is a good size on mobile */
+        .logo-on-top {
+            width: 200px !important; 
+        }
+    }
+</style>
 </head>
 <body>
 
     <div class="logo-break-section">
-        <img
-            src="LOGO.png"
-            alt="R.A.B Electrical Logo"
-            class="logo-on-top"
-            style="width:300px; height:auto; display:block; margin:0 auto;"
-            onerror="this.onerror=null;this.src='https://placehold.co/250x150/f0f0f0/666666?text=LOGO'">
+        <div class="landing-header-inner">
+            <div class="logo-wrapper">
+                <img 
+                    src="transparent logo.png" 
+                    alt="R.A.B Electrical Logo" 
+                    class="logo-on-top"
+                    style="width:300px; height:auto; display:block;"
+                    onerror="this.onerror=null;this.src='LOGO.png'">
+            </div>
+
+            <div class="header-contact-info">
+                <a href="tel:07801509111" style="display: block; font-size: 1.25rem; font-weight: 700; color: #15316f; text-decoration: none; margin-bottom: 5px;">
+                    📞 07801 509 111
+                </a>
+                <span style="font-size: 0.9rem; color: #555; display: block;">
+                    Bilston, West Midlands
+                </span>
+            </div>
+        </div>
     </div>
 
     <main class="container">
-        <h1>Protect Your Business. Gain Peace of Mind.</h1>
+        <h1>Is Your Business Legally Compliant?</h1>
         
         <p>We help business owners like you overcome the burden of <span class="blue-bold">electrical compliance</span> by providing a complete, <span class="blue-bold">stress-free</span> process, so you can operate with confidence and have <span class="blue-bold">one less thing to worry about.</span></p>
 
@@ -45,10 +84,9 @@
             <div class="services-list">
                 <ul style="list-style-type: none;">
                     <li>✅ Comprehensive electrical and fire safety solutions, from fire alarm servicing to PAT testing, for complete peace of mind.</li>
-                    <li>✅ Bespoke compliance documentation and logbooks to keep your business records organized and audit-ready.</li>
+                    <li>✅ Bespoke compliance logbooks to keep your records in one place and audit-ready.</li>
                     <li>✅ Tiered packages to suit your budget.</li>
-                    <li>✅ Reliable and professional workmanship that you can trust.</li>
-                    <li>✅ Timely, efficient solutions that prevent future problems.</li>
+                    <li>✅ Never miss a deadline; we handle all the dates for you.</li>
                 </ul>
             </div>
         </section>
@@ -141,7 +179,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
